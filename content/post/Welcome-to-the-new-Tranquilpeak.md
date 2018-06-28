@@ -147,7 +147,7 @@ Check out Tranquilpeak theme in live : [hugo-tranquilpeak-theme demo](https://tr
 Checkout showcase https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase
 
 ### How can I add my site to the showcase
-  
+
 **Click [here](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&body=Hey,%20add%20my%20blog%20into%20the%20showcase:) to add your blog into the showcase.**
 
 Please fill the following information:
