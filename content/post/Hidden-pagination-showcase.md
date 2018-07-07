@@ -9,6 +9,7 @@ categories:
 tags:
 - pagination
 showPagination: false
+showSocial: false
 ---
 
 This post is used to show how a site looks if the pagination is hidden.

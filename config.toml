@@ -89,9 +89,9 @@ canonifyurls = true
 [[menu.links]]
   weight = 2
   identifier = "weixin"
-  name = "Weixin"
+  name = "微信"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-weixin\"></i>"
-  url = "https://github.com/rhubard"
+  url = "/#weixin"
 
 [[menu.misc]]
   weight = 2

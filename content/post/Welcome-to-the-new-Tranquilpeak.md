@@ -1,6 +1,6 @@
 ---
 title: "Welcome to Tranquilpeak 0.4.3-BETA"
-date: 2015-06-15
+date: 2015-09-15
 categories:
 - tranquilpeak
 - releases
@@ -19,6 +19,7 @@ thumbnailImagePosition: "top"
 thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city-750.jpg
 coverImage: //d1u9biwaxjngwg.cloudfront.net/welcome-to-tranquilpeak/city.jpg
 metaAlignment: center
+showSocial: false
 ---
 Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
 <!--more-->
