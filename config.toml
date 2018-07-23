@@ -89,9 +89,9 @@ canonifyurls = true
 [[menu.links]]
   weight = 2
   identifier = "weixin"
-  name = "Weixin"
+  name = "微信"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-weixin\"></i>"
-  url = "https://github.com/rhubard"
+  url = "/2018/07/wechat/"
 
 [[menu.misc]]
   weight = 2
@@ -105,7 +105,7 @@ canonifyurls = true
   # You must use date format used by Go Time package https://golang.org/pkg/time/
   # Months (not work with short month like "jan", "feb", etc) are translated if translation exists on i18n folders
   # Default format is: January 2, 2006 
-  dateFormat = "2006-01-02"
+  dateFormat = "2006-01-02 15:04"
 
   # Global keywords configuration. Following keywords will be add to every pages
   keywords = ["侯俊青", "博客", "houjq.com", "互联网", "软件开发", "自媒体"]
