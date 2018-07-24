@@ -167,7 +167,7 @@ http {
 
 > **IP白名单配置 ip_white.conf**
 
-```
+```nginx
 allow 127.0.0.0/24;
 allow 10.209.0.0/16;
 ```
@@ -176,7 +176,7 @@ allow 10.209.0.0/16;
 
 > **IP黑名单配置 ip_black.conf**
 
-```
+```nginx
 deny  192.168.1.1;
 deny  all;
 ```
@@ -185,7 +185,7 @@ deny  all;
 
 > **Naxsi自定义规则 main_rule.rules**
 
-```
+```nginx
 # 拦截参数中有冒号":"的GET请求，规则id为1316（不要和naxsi_core.rule中的id重复）
 MainRule id:1316 s:DROP str:: "mz:ARGS";
 ```
@@ -196,7 +196,7 @@ MainRule id:1316 s:DROP str:: "mz:ARGS";
 
 > **Naxsi白名单配置 white_rule.rules**
 
-```
+```nginx
 # 针对/bar的URL的参数：
 BasicRule wl:1000 "mz:$URL:/bar|ARGS";
 # 针对以/foo开头的参数的配置白名单

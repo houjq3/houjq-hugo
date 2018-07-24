@@ -17,22 +17,21 @@ draft: false
 ---
 
 本文的主要目是介绍nodejs在Linux环境上安装部署。 
-
 <!--more-->
 
-1、下载地址：http://nodejs.cn/download/
+1、下载源码：http://nodejs.cn/download/
 
 2、解压源码
 
 ```
-tar zxvf node-v0.10.24.tar.gz
+tar zxvf node-v10.5.0.tar.xz
 ```
 
 3、 编译安装
 
 ```
-cd node-v0.10.24
-./configure --prefix=/usr/local/node/0.10.24
+cd node-v10.5.0
+./configure --prefix=$HOME/node/0.10.24
 make
 make install
 ```
@@ -40,21 +39,21 @@ make install
 4、 配置NODE_HOME，进入profile编辑环境变量
 
 ```
-vim /etc/profile
+vi $HOME/.bash_profile
 ```
 
 设置nodejs环境变量，在 ***export PATH USER LOGNAME MAIL HOSTNAME HISTSIZE HISTCONTROL*** 一行的上面添加如下内容:
 
 ```
 #set for nodejs
-export NODE_HOME=/usr/local/node/0.10.24
+export NODE_HOME=$HOME/node/0.10.24
 export PATH=$NODE_HOME/bin:$PATH
 ```
 
 :wq保存并退出，编译/etc/profile 使配置生效
 
 ```
-source /etc/profile
+source $HOME/.bash_profile
 ```
 
 验证是否安装配置成功
@@ -68,7 +67,7 @@ node -v
 npm模块安装路径
 
 ```
-/usr/local/node/0.10.24/lib/node_modules/
+$HOME/node/0.10.24/lib/node_modules/
 ```
 
 
