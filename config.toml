@@ -180,6 +180,8 @@ canonifyurls = true
   # they have to be referred from static root. Example
    [[params.customJS]]
      src = "http://res.wx.qq.com/open/js/jweixin-1.2.0.js"
+   [[params.customJS]]
+     src = "js/wx-config.js"
 
   # Display `Next` on left side of the pagination, and `Prev` on right side one.
   # If you set this value to `true`, these positions swap.

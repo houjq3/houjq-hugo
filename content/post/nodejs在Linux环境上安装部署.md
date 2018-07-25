@@ -16,7 +16,7 @@ showSocial: false
 draft: false
 ---
 
-本文的主要目是介绍nodejs在Linux环境上安装部署。 
+本文的主要目是介绍nodejs在Linux环境上安装部署。
 <!--more-->
 
 1、下载源码：http://nodejs.cn/download/
