@@ -39,41 +39,41 @@ wx.ready(function () {
         link: currUrl,
         imgUrl: 'http://houjq.com/author.jpg',
         trigger: function (res) {
-            alert('用户点击发送给朋友');
+            // alert('用户点击发送给朋友');
         },
         success: function (res) {
-            alert('已分享');
+            // alert('已分享');
         },
         cancel: function (res) {
-            alert('已取消');
+            // alert('已取消');
         },
         fail: function (res) {
-            alert(JSON.stringify(res));
+            // alert(JSON.stringify(res));
         }
     });
 
     // 2.2 监听“分享到朋友圈”按钮点击、自定义分享内容及分享结果接口
     wx.onMenuShareTimeline({
         title: share_title,
-        desc: share_desc,
         link: currUrl,
         imgUrl: 'http://houjq.com/author.jpg',
         trigger: function (res) {
-            alert('用户点击分享到朋友圈');
+            // alert('用户点击分享到朋友圈');
         },
         success: function (res) {
-            alert('已分享');
+            // alert('已分享');
         },
         cancel: function (res) {
-            alert('已取消');
+        desc: share_desc,
+            // alert('已取消');
         },
         fail: function (res) {
-            alert(JSON.stringify(res));
+            // alert(JSON.stringify(res));
         }
     });
 
 });
 
 wx.error(function (res) {
-    alert(res.errMsg);
+    // alert(res.errMsg);
 });
