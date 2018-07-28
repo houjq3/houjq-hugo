@@ -177,3 +177,4 @@ Percentage of the requests served within a certain time (ms)
  100%   3314 (longest request)
 ```
 
+![](/pay.jpg)
