@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellij Idea on 侯俊青的博客</title>
+    <link>/categories/intellij-idea/</link>
+    <description>Recent content in Intellij Idea on 侯俊青的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 30 Jul 2018 09:32:31 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/intellij-idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>idea快捷键整理</title>
+      <link>/2018/07/idea-hot-key/</link>
+      <pubDate>Mon, 30 Jul 2018 09:32:31 +0800</pubDate>
+      
+      <guid>/2018/07/idea-hot-key/</guid>
+      <description>&lt;p&gt;idea快捷键整理大全
+
+【常规】&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
