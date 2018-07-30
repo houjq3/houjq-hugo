@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 侯俊青的博客</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on 侯俊青的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Jul 2018 15:11:49 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Ab</title>
+      <link>/tags/ab/</link>
+      <pubDate>Mon, 23 Jul 2018 15:11:49 +0800</pubDate>
+      
+      <guid>/tags/ab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Apache Bench</title>
+      <link>/tags/apache-bench/</link>
+      <pubDate>Mon, 23 Jul 2018 15:11:49 +0800</pubDate>
+      
+      <guid>/tags/apache-bench/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chinese</title>
+      <link>/tags/chinese/</link>
+      <pubDate>Wed, 02 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/chinese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cover Image</title>
+      <link>/tags/cover-image/</link>
+      <pubDate>Wed, 13 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/cover-image/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dailymotion</title>
+      <link>/tags/dailymotion/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/dailymotion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Disqus</title>
+      <link>/tags/disqus/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/disqus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Github Theme</title>
+      <link>/tags/github-theme/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/github-theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Google Analytics</title>
+      <link>/tags/google-analytics/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/google-analytics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gravatar</title>
+      <link>/tags/gravatar/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gravatar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo Theme</title>
+      <link>/tags/hexo-theme/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hexo-theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Highlight Code</title>
+      <link>/tags/highlight-code/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/highlight-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html Elements</title>
+      <link>/tags/html-elements/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/html-elements/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Image Gallery</title>
+      <link>/tags/image-gallery/</link>
+      <pubDate>Mon, 18 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/image-gallery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japanese</title>
+      <link>/tags/japanese/</link>
+      <pubDate>Wed, 02 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/japanese/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Fri, 13 Jul 2018 11:59:53 +0800</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>/tags/maven/</link>
+      <pubDate>Wed, 11 Jul 2018 18:32:31 +0800</pubDate>
+      
+      <guid>/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nginx</title>
+      <link>/tags/nginx/</link>
+      <pubDate>Sat, 28 Jul 2018 18:32:56 +0800</pubDate>
+      
+      <guid>/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodejs</title>
+      <link>/tags/nodejs/</link>
+      <pubDate>Fri, 13 Jul 2018 11:59:53 +0800</pubDate>
+      
+      <guid>/tags/nodejs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openresty</title>
+      <link>/tags/openresty/</link>
+      <pubDate>Fri, 06 Jul 2018 21:43:31 +0800</pubDate>
+      
+      <guid>/tags/openresty/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pagination</title>
+      <link>/tags/pagination/</link>
+      <pubDate>Fri, 15 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/pagination/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Responsive</title>
+      <link>/tags/responsive/</link>
+      <pubDate>Tue, 15 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/responsive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Siege</title>
+      <link>/tags/siege/</link>
+      <pubDate>Mon, 23 Jul 2018 17:21:26 +0800</pubDate>
+      
+      <guid>/tags/siege/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Social</title>
+      <link>/tags/social/</link>
+      <pubDate>Sun, 17 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/social/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag Plugins</title>
+      <link>/tags/tag-plugins/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tag-plugins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>/tags/tags/</link>
+      <pubDate>Sat, 16 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>/tags/test/</link>
+      <pubDate>Mon, 23 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/test/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Videos Integration</title>
+      <link>/tags/videos-integration/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/videos-integration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vimeo</title>
+      <link>/tags/vimeo/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/vimeo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youtube</title>
+      <link>/tags/youtube/</link>
+      <pubDate>Sat, 09 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/youtube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>侯俊青</title>
+      <link>/tags/%E4%BE%AF%E4%BF%8A%E9%9D%92/</link>
+      <pubDate>Thu, 05 Jul 2018 19:43:31 +0800</pubDate>
+      
+      <guid>/tags/%E4%BE%AF%E4%BF%8A%E9%9D%92/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>安全加固</title>
+      <link>/tags/%E5%AE%89%E5%85%A8%E5%8A%A0%E5%9B%BA/</link>
+      <pubDate>Fri, 06 Jul 2018 21:43:31 +0800</pubDate>
+      
+      <guid>/tags/%E5%AE%89%E5%85%A8%E5%8A%A0%E5%9B%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微信</title>
+      <link>/tags/%E5%BE%AE%E4%BF%A1/</link>
+      <pubDate>Thu, 05 Jul 2018 19:43:31 +0800</pubDate>
+      
+      <guid>/tags/%E5%BE%AE%E4%BF%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>性能优化</title>
+      <link>/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Fri, 06 Jul 2018 21:43:31 +0800</pubDate>
+      
+      <guid>/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>执行阶段</title>
+      <link>/tags/%E6%89%A7%E8%A1%8C%E9%98%B6%E6%AE%B5/</link>
+      <pubDate>Sat, 28 Jul 2018 18:32:56 +0800</pubDate>
+      
+      <guid>/tags/%E6%89%A7%E8%A1%8C%E9%98%B6%E6%AE%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>测试工具</title>
+      <link>/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
+      <pubDate>Mon, 23 Jul 2018 17:21:26 +0800</pubDate>
+      
+      <guid>/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
