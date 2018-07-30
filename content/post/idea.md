@@ -20,9 +20,10 @@ draft: false
 ---
 
 idea快捷键整理大全
-<!--more-->
-【常规】
 
+<!--more-->
+
+【常规】
 1. Ctrl+Shift + Enter，语句完成
 2. “！”，否定完成，输入表达式时按 “！”键
 3. Ctrl+E，最近的文件
