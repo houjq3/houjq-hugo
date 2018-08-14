@@ -18,7 +18,7 @@ defaultContentLanguage = "zh-cn"
 title = "侯俊青的博客"
 theme = "tranquilpeak"
 
-# disqusShortname = "hugo-tranquilpeak-theme"
+disqusShortname = "侯俊青的博客"
 # googleAnalytics = "UA-123-45"
 paginate = 7
 canonifyurls = true
