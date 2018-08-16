@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring Cloud on 侯俊青的博客</title>
+    <link>/categories/spring-cloud/</link>
+    <description>Recent content in Spring Cloud on 侯俊青的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 16 Aug 2018 12:18:24 +0800</lastBuildDate>
+    
+	<atom:link href="/categories/spring-cloud/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Zuul实现JDBC动态路由</title>
+      <link>/2018/08/zuul-jdbc/</link>
+      <pubDate>Thu, 16 Aug 2018 12:18:24 +0800</pubDate>
+      
+      <guid>/2018/08/zuul-jdbc/</guid>
+      <description>&lt;p&gt;Zuul 是Netflix 提供的一个开源组件,致力于在云平台上提供动态路由，监控，弹性，安全等边缘服务的框架。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

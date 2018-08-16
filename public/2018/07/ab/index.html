@@ -1,0 +1,935 @@
+
+
+  
+    
+  
+
+
+  
+
+
+
+
+
+  
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="generator" content="Hugo 0.42.1 with theme Tranquilpeak 0.4.3-BETA">
+    <title>Apache Bench</title>
+    <meta name="author" content="侯俊青">
+    <meta name="keywords" content="测试工具, Apache Bench, ab, 侯俊青, 博客, houjq.com, 互联网, 软件开发, 自媒体">
+
+    <link rel="icon" href="/favicon.ico">
+    
+
+    
+    <meta name="description" content="​   ab是一种用于测试Apache超文本传输协议（HTTP）服务器的工具。
+">
+    <meta property="og:description" content="​   ab是一种用于测试Apache超文本传输协议（HTTP）服务器的工具。
+">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Apache Bench">
+    <meta property="og:url" content="/2018/07/ab/">
+    <meta property="og:site_name" content="侯俊青的博客">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="侯俊青的博客">
+    <meta name="twitter:description" content="​   ab是一种用于测试Apache超文本传输协议（HTTP）服务器的工具。
+">
+    
+    
+
+    
+    
+
+    
+      <meta property="og:image" content="/author.jpg">
+    
+
+    
+      <meta property="og:image" content="/thumbnail/201807/SupportApache-small.png">
+    
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="/css/style-jsjn0006wyhpyzivf6yceb31gvpjatbcs3qzjvlumobfnugccvobqwxnnaj8.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="/">侯俊青的博客</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="/author.jpg" alt="作者的图片" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="/#about">
+          <img class="sidebar-profile-picture" src="/author.jpg" alt="作者的图片" />
+        </a>
+        <h4 class="sidebar-profile-name">侯俊青</h4>
+        
+          <h5 class="sidebar-profile-bio">理想强奸了现实，生下了孽种叫回忆</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">首页</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">分类</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">标签</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/archives">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+      
+      <span class="sidebar-button-desc">归档</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">关于</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/rhubard">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/2018/07/wechat/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-weixin"></i>
+      
+      <span class="sidebar-button-desc">微信</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/index.xml">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+
+      <div id="main" data-behavior="4"
+        class="
+               hasCoverMetaIn
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Apache Bench
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2018-07-23T15:11:49&#43;08:00">
+        
+  
+  
+  
+  
+    2018-07-23 15:11
+  
+
+      </time>
+    
+    
+  
+  
+    <span>发布在</span>
+    
+      <a class="category-link" href="/categories/test">test</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>​   ab是一种用于测试Apache超文本传输协议（HTTP）服务器的工具。
+</p>
+
+<p>​   apache自带ab工具，可以测试apache、IIs、tomcat、nginx等服务器。但是ab没有Jmeter、Loadrunner那样有各种场景设计、各种图形报告和监控，只需一个命令即可，有输出描述，可以简单的进行一些压力测试。</p>
+
+<h2 id="1-1-基本用法">1.1 基本用法</h2>
+
+<p>ab -n 全部请求数 -c 并发数测试url，例:</p>
+
+<pre><code>ab -n 1000 -c 50 &lt;http://www.newdev.gztest.com/&gt;
+</code></pre>
+
+<p>这个命令的意思是启动ab，向<a href="http://www.newdev.gztest.com发送1000个请求(-n">http://www.newdev.gztest.com发送1000个请求(-n</a> 1000) ，并每次发送10个请求(-c 50) &mdash;&mdash;也就是说一次都发过去了。</p>
+
+<h2 id="1-2-结果分析">1.2 结果分析</h2>
+
+<pre><code class="language-markdown">Server Software:         Microsoft-IIS/7.0
+Server Hostname:        www.newdev.gztest.com
+Server Port:            80
+Document Length:        82522 bytes  #请求文档大小
+
+Concurrency Level:      50           #并发数  
+Time taken for tests:   92.76140 seconds #全部请求完成耗时
+Complete requests:      10000          #全部请求数
+Failed requests:        1974           #失败的请求
+  (Connect: 0。 Length: 1974。 Exceptions: 0)
+Write errors:           0
+Total transferred:      827019400 bytes   #总传输大小 
+HTML transferred:       825219400 bytes //整个场景中的HTML内容传输量
+Requests per second:    108.61 [#/sec] (mean)   #每秒请求数(平均)//大家最关心的指标之一，相当于 LR 中的每秒事务数，后面括号中的 mean 表示这是一个平均值
+Time per request:       460.381 [ms] (mean)   #每次并发请求时间(所有并发) //大家最关心的指标之二，相当于 LR 中的平均事务响应时间，后面括号中的 mean 表示这是一个平均值
+Time per request:       9.208 [ms] (mean。 across all concurrent requests)   #每一请求时间(并发平均)  //每个请求实际运行时间的平均值
+Transfer rate:          8771.39 [Kbytes/sec] received    #传输速率//平均每秒网络上的流量，可以帮助排除是否存在网络流量过大导致响应时间延长的问题
+Percentage of the requests served within a certain time (ms)
+  50%   2680
+  66%   2806
+  75%   2889
+  80%   2996
+  90%  11064
+  95%  20161
+  98%  21092
+  99%  21417
+ 100%  21483 (longest request)
+//整个场景中所有请求的响应情况。在场景中每个请求都有一个响应时间，其中50％的用户响应时间小于2680毫秒，60％的用户响应时间小于2806毫秒，最大的响应时间小于21417毫秒 
+由于对于并发请求，cpu实际上并不是同时处理的，而是按照每个请求获得的时间片逐个轮转处理的，所以基本上第一个Time per request时间约等于第二个Time per request时间乘以并发请求数。
+
+Connection Times (ms)    #连接时间
+             	     min  mean[+/-sd] median   max
+Connect(#连接):        0    0   2.1      0      46
+Processing(#处理):    31  458  94.7    438    1078
+Waiting(#等待):       15  437  87.5    422     938
+Total:         	     31  458  94.7    438    1078
+
+</code></pre>
+
+<h2 id="1-3-其它参数">1.3 其它参数</h2>
+
+<pre><code class="language-markdown">-n requests     全部请求数
+-c concurrency  并发数
+-t timelimit    最传等待回应时间
+-p postfile     POST数据文件
+-T content-type POST Content-type
+-v verbosity    How much troubleshooting info to print
+-w              Print out results in HTML tables
+-i              Use HEAD instead of GET
+-x attributes   String to insert as table attributes
+-y attributes   String to insert as tr attributes
+-z attributes   String to insert as td or th attributes
+-C attribute    加入cookie， eg. 'Apache=1234. (repeatable)
+-H attribute    加入http头， eg. 'Accept-Encoding: gzip'
+                Inserted after all normal header lines. (repeatable)
+-A attribute    http验证，分隔传递用户名及密码
+-P attribute    Add Basic Proxy Authentication， the attributes
+                are a colon separated username and password.
+-X proxy:port   代理服务器
+-V              查看ab版本
+-k              Use HTTP KeepAlive feature
+-d              Do not show percentiles served table.
+-S              Do not show confidence estimators and warnings.
+-g filename     Output collected data to gnuplot format file.
+-e filename     Output CSV file with percentages served
+-h              Display usage information (this message)
+</code></pre>
+
+<h2 id="1-4-例子">1.4 例子</h2>
+
+<h3 id="1-4-1-压测方法">1.4.1 压测方法</h3>
+
+<p>可以用1000个请求为前提，分别并发1、5、10、20、50、100、1000等压测。</p>
+
+<p>ab -n1000 -c1 <a href="http://10.255.254.11:7777/i/v1/res/numarea/13546321414">http://10.255.254.11:7777/i/v1/res/numarea/13546321414</a></p>
+
+<table>
+<thead>
+<tr>
+<th align="center"><strong>并发用户数</strong></th>
+<th align="center"><strong>吞吐率(req/s)</strong></th>
+<th align="center"><strong>请求等待时间(ms)</strong></th>
+<th align="center"><strong>请求处理时间(ms)</strong></th>
+<th align="center"><strong>请求带宽(Kbytes/sec)</strong></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="center">1</td>
+<td align="center">306.81</td>
+<td align="center">3.259</td>
+<td align="center">3.259</td>
+<td align="center">175.58</td>
+</tr>
+
+<tr>
+<td align="center">2</td>
+<td align="center">632.14</td>
+<td align="center">3.164</td>
+<td align="center">1.582</td>
+<td align="center">361.75</td>
+</tr>
+
+<tr>
+<td align="center">5</td>
+<td align="center">1742.08</td>
+<td align="center">2.87</td>
+<td align="center">0.574</td>
+<td align="center">996.94</td>
+</tr>
+
+<tr>
+<td align="center">10</td>
+<td align="center">2339.47</td>
+<td align="center">4.274</td>
+<td align="center">0.427</td>
+<td align="center">1338.8</td>
+</tr>
+
+<tr>
+<td align="center">20</td>
+<td align="center">4684.92</td>
+<td align="center">4.269</td>
+<td align="center">0.213</td>
+<td align="center">2681.02</td>
+</tr>
+
+<tr>
+<td align="center">50</td>
+<td align="center">5852.98</td>
+<td align="center">8.543</td>
+<td align="center">0.171</td>
+<td align="center">3349.46</td>
+</tr>
+
+<tr>
+<td align="center">100</td>
+<td align="center">4673.6</td>
+<td align="center">21.397</td>
+<td align="center">0.214</td>
+<td align="center">2674.54</td>
+</tr>
+
+<tr>
+<td align="center">150</td>
+<td align="center">4502.31</td>
+<td align="center">33.316</td>
+<td align="center">0.222</td>
+<td align="center">2576.52</td>
+</tr>
+
+<tr>
+<td align="center">200</td>
+<td align="center">3956.98</td>
+<td align="center">50.544</td>
+<td align="center">0.253</td>
+<td align="center">2266.71</td>
+</tr>
+
+<tr>
+<td align="center">500</td>
+<td align="center">3691.18</td>
+<td align="center">135.458</td>
+<td align="center">0.271</td>
+<td align="center">2112.34</td>
+</tr>
+
+<tr>
+<td align="center">800</td>
+<td align="center">1558.03</td>
+<td align="center">513.47</td>
+<td align="center">0.642</td>
+<td align="center">891.61</td>
+</tr>
+
+<tr>
+<td align="center">1000</td>
+<td align="center">990.4</td>
+<td align="center">1009.689</td>
+<td align="center">1.01</td>
+<td align="center">566.77</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="1-4-2-结果如下">1.4.2 结果如下</h3>
+
+<pre><code>ab -c 10000 -n 10000 http://localhost:8701/i/gray/test/v1/pay/test
+</code></pre>
+
+<pre><code class="language-markdown">Server Software:        TongWeb
+Server Hostname:        localhost
+Server Port:            8701
+
+Document Path:          /i/gray/test/v1/pay/test
+Document Length:        0 bytes
+
+Concurrency Level:      10000
+Time taken for tests:   3.533 seconds
+Complete requests:      10000
+Failed requests:        9128
+   (Connect: 0， Receive: 0， Length: 4279， Exceptions: 4849)
+Write errors:           0
+Total transferred:      1664818 bytes
+HTML transferred:       642637 bytes
+Requests per second:    2830.42 [#/sec] (mean)
+Time per request:       3533.040 [ms] (mean)
+Time per request:       0.353 [ms] (mean， across all concurrent requests)
+Transfer rate:          460.17 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0  725 890.9    295    3005
+Processing:     0  805 904.0    300    3020
+Waiting:        0  668 933.8      0    3013
+Total:         10 1530 1024.1   1264    3314
+
+Percentage of the requests served within a certain time (ms)
+  50%   1264
+  66%   2016
+  75%   2483
+  80%   2816
+  90%   3020
+  95%   3058
+  98%   3219
+  99%   3241
+ 100%   3314 (longest request)
+</code></pre>
+
+<p><img src="/pay.jpg" alt="" /></p>
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">标签</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/">测试工具</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/apache-bench/">Apache Bench</a>
+
+  <a class="tag tag--primary tag--small" href="/tags/ab/">ab</a>
+
+                  </div>
+                
+              
+            
+            
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/siege/" data-tooltip="Siege">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/nodejs-build/" data-tooltip="nodejs在Linux环境上安装部署">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+            
+              
+                
+
+
+<div id="SOHUCS" sid="/2018/07/ab/"></div>
+<script charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+window.changyan.api.config({
+appid: 'cytL94OhC',
+conf: 'prod_6446df9b57f7380702a3bc6ec0aa2651'
+});
+</script>
+
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2018 侯俊青. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        
+  <div class="post-actions-wrap">
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/siege/" data-tooltip="Siege">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">下一篇</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="/2018/07/nodejs-build/" data-tooltip="nodejs在Linux环境上安装部署">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">上一篇</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="/author.jpg" alt="作者的图片" />
+    
+    <h4 id="about-card-name">侯俊青</h4>
+    
+      <div id="about-card-bio">理想强奸了现实，生下了孽种叫回忆</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        软件工程师
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        中国 山西 太原
+      </div>
+    
+  </div>
+</div>
+
+    <div id="algolia-search-modal" class="modal-container">
+  <div class="modal">
+    <div class="modal-header">
+      <span class="close-button"><i class="fa fa-close"></i></span>
+      <a href="https://algolia.com" target="_blank" rel="noopener" class="searchby-algolia text-color-light link-unstyled">
+        <span class="searchby-algolia-text text-color-light text-small">by</span>
+        <img class="searchby-algolia-logo" src="https://www.algolia.com/static_assets/images/press/downloads/algolia-light.svg">
+      </a>
+      <i class="search-icon fa fa-search"></i>
+      <form id="algolia-search-form">
+        <input type="text" id="algolia-search-input" name="search"
+          class="form-control input--large search-input" placeholder="搜索" />
+      </form>
+    </div>
+    <div class="modal-body">
+      <div class="no-result text-color-light text-center"></div>
+      <div class="results">
+        
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/08/zuul-jdbc/">
+                <h3 class="media-heading">Zuul实现JDBC动态路由</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>Zuul 是Netflix 提供的一个开源组件,致力于在云平台上提供动态路由，监控，弹性，安全等边缘服务的框架。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/08/third-login/">
+                <h3 class="media-heading">第三方登录原理探究【转载】</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Aug 8, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>OAuth（开放授权）是一个开放标准，允许用户让第三方应用访问该用户在某一网站上存储的私密的资源（如照片，视频，联系人列表），而无需将用户名和密码提供给第三方应用。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/idea-hot-key/">
+                <h3 class="media-heading">idea快捷键整理</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>idea快捷键整理大全</p>
+
+<p></p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/nginx-phase/">
+                <h3 class="media-heading">Nginx执行阶段概念</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>OpenResty 处理一个请求，它的处理流程请参考下图（从 Request start 开始）
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/siege/">
+                <h3 class="media-heading">Siege</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>​   Siege是一个压力测试和评测工具，设计用于WEB开发这评估应用在压力下的承受能力。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/ab/">
+                <h3 class="media-heading">Apache Bench</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>​   ab是一种用于测试Apache超文本传输协议（HTTP）服务器的工具。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/nodejs-build/">
+                <h3 class="media-heading">nodejs在Linux环境上安装部署</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>本文的主要目是介绍nodejs在Linux环境上安装部署。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/maven-scope/">
+                <h3 class="media-heading">maven中scope标签详解</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>本文的主要目是介绍maven中scope标签详解。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/nginx-optimize/">
+                <h3 class="media-heading">Nginx安全加固和性能优化</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>本文的主要目是介绍如何通过优化 Nginx 配置，提高 Nginx Web 服务器的安全性和用户访问效率。
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
+              <a class="link-unstyled" href="/2018/07/wechat/">
+                <h3 class="media-heading">微信</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2018
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather"><p>扫一扫，加我微信
+</p></div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+      </div>
+    </div>
+    <div class="modal-footer">
+      <p class="results-count text-medium"
+         data-message-zero=""
+         data-message-one=""
+         data-message-other="">
+         22 posts found
+      </p>
+    </div>
+  </div>
+</div>
+    
+  
+    
+    <div id="cover" style="background-image:url('/images/cover.jpg');"></div>
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="/js/script-qi9wbxp2ya2j6p7wx1i6tgavftewndznf4v0hy2gvivk1rxgc3lm7njqb6bz.min.js"></script>
+
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = '\/2018\/07\/ab\/';
+          
+            this.page.identifier = '\/2018\/07\/ab\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = '侯俊青的博客';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+    
+  </body>
+</html>
+

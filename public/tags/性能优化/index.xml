@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>性能优化 on 侯俊青的博客</title>
+    <link>/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 性能优化 on 侯俊青的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 06 Jul 2018 21:43:31 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Nginx安全加固和性能优化</title>
+      <link>/2018/07/nginx-optimize/</link>
+      <pubDate>Fri, 06 Jul 2018 21:43:31 +0800</pubDate>
+      
+      <guid>/2018/07/nginx-optimize/</guid>
+      <description>&lt;p&gt;本文的主要目是介绍如何通过优化 Nginx 配置，提高 Nginx Web 服务器的安全性和用户访问效率。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

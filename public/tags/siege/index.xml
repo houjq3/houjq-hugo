@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siege on 侯俊青的博客</title>
+    <link>/tags/siege/</link>
+    <description>Recent content in Siege on 侯俊青的博客</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Jul 2018 17:21:26 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/siege/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Siege</title>
+      <link>/2018/07/siege/</link>
+      <pubDate>Mon, 23 Jul 2018 17:21:26 +0800</pubDate>
+      
+      <guid>/2018/07/siege/</guid>
+      <description>&lt;p&gt;​   Siege是一个压力测试和评测工具，设计用于WEB开发这评估应用在压力下的承受能力。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
