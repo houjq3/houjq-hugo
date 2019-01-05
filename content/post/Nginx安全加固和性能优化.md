@@ -49,9 +49,9 @@ http {
                       '$host|$request|$request_body|$http_x_forwarded_for|'
                       '$upstream_addr|$upstream_response_time|$request_time';
     
-    #access_log  logs/access.log  main;
+    access_log  logs/access.log  main;
 	
-    charset UTF-8;
+    charset utf-8;
     tcp_nopush on;
     
     ## 通过关闭慢连接来抵御一些DDOS攻击
@@ -131,6 +131,16 @@ http {
     server {
         server_name localhost;
         listen 80;
+        #listen 443 ssl;
+        
+        ## 要让https和http并存，不能在配置文件中使用ssl on;
+        #ssl on; 
+        #ssl_certificate   cert/a.pem;
+        #ssl_certificate_key  cert/a.key;
+        #ssl_session_timeout 5m;
+        #ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+        #ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        #ssl_prefer_server_ciphers on;
         
         ## 隐藏版本号
         server_tokens  off;       
@@ -170,7 +180,7 @@ http {
         index index.html;
         
         ## 静态资源
-        location ~* \.(js|css|flash|media|jpg|png|gif|dll|cab|CAB|ico|vbs|json|ttf|woff|eot)$ {
+        location ~* \.(js|css|flash|media|jpg|png|gif|dll|cab|CAB|ico|vbs|json|ttf|woff|eot|map)$ {
             # 缓存30天
             add_header Cache-Control "max-age=2592000";
         }
@@ -214,7 +224,9 @@ http {
         #    return 200 'User-agent: *\nDisallow: /';
         #}
         
-        error_page   500 502 503 504  /50x.html;
+        ## 当只允许https访问时，当用http访问时nginx会报出497错误码
+        #error_page 497  https:/www.houjq.com$request_uri;
+        error_page  500 502 503 504  /50x.html;
 
     }
     
