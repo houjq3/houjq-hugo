@@ -145,13 +145,13 @@ http {
         ## 隐藏版本号
         server_tokens  off;       
         ## 清除不安全的HTTP响应头
-        more_clear_headers “X-Powered-By”;
-        more_clear_headers “Server”;
-        more_clear_headers “ETag”;
-        more_clear_headers “Connection”;
-        more_clear_headers “Date”;
-        more_clear_headers “Accept-Ranges”;
-        more_clear_headers “Last-Modified”;
+        more_clear_headers "X-Powered-By";
+        more_clear_headers "Server";
+        more_clear_headers "ETag";
+        more_clear_headers "Connection";
+        more_clear_headers "Date";
+        more_clear_headers "Accept-Ranges";
+        more_clear_headers "Last-Modified";
 
         ## 避免点击劫持
         add_header X-Frame-Options "SAMEORIGIN"; 
