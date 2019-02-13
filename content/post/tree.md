@@ -1,6 +1,7 @@
 ---
 title: "Tree"
-date: 2018-07-18T08:45:35+08:00
+slug: "Tree"
+date: 2019-01-14T09:34:58+08:00
 categories:
 - category
 - subcategory
@@ -9,7 +10,9 @@ tags:
 - tag2
 keywords:
 - tech
-#thumbnailImage: //example.com/image.jpg
+thumbnailImagePosition: left
+thumbnailImage: //example.com/image.jpg
+showSocial: false
 draft: true
 ---
 
@@ -17,22 +20,55 @@ draft: true
 
 
 
+
+
+### Tree命令简介
+
+　　tree是一种递归目录列表命令，产生一个深度缩进列表文件，这是彩色的ALA dircolors如果ls_colors设置环境变量和输出是TTY。树已经被移植和报道以下操作系统下工作：Linux，FreeBSD，OS X操作系统，Solaris，HP UX，Cygwin，HP NonStop OS / 2。
+
+### Tree命令安装
+
+　　1.下载安装包，地址：<http://mama.indstate.edu/users/ice/tree/>
+
+　　2.解压安装
+
+　　　　1）Linux环境（CentOS 6.5）下安装
+
+　　　　　　a.解压tree-1.8.0.tgz文件，命令：tar -zxvf tree-1.8.0.tgz
+
+　　　　　　b.进入解压目录中，命令：cd tree-1.8.0
+
+　　　　　　c.修改tree的配置文件Makefile，将19行改为如下，保存
+
+​				`prefix = /mios/cms/soft`
+
+　　　　　　d.make install
+
+### Tree命令使用
+
+　　格式：tree + 参数
+
 ```
-D:\idea
-│  idea-start.bat				// 启动脚本
-│  
-├─ideaIU-2018.1.5.win			// idea主目录
-└─IntelliJIDEALicenseServer		// 远程服务器授权主目录
-```
-
-
-
-idea-start.bat 命令
-
-```bash
-@echo off
-start /b "LicenseServer" "%~dp0IntelliJIDEALicenseServer\IntelliJIDEALicenseServer_windows_amd64.exe" -p 1017
-start /b "natapp" "%~dp0IntelliJIDEALicenseServer\natapp.exe"
-start "idea" "%~dp0ideaIU-2018.1.5.win\bin\idea64.exe"
+tree命令行参数：
+    -a 显示所有文件和目录。
+    -A 使用ASNI绘图字符显示树状图而非以ASCII字符组合。
+    -C 在文件和目录清单加上色彩，便于区分各种类型。
+    -d 显示目录名称而非内容。
+    -D 列出文件或目录的更改时间。
+    -f 在每个文件或目录之前，显示完整的相对路径名称。
+    -F 在执行文件，目录，Socket，符号连接，管道名称名称，各自加上"*","/","=","@","|"号。
+    -g 列出文件或目录的所属群组名称，没有对应的名称时，则显示群组识别码。
+    -i 不以阶梯状列出文件或目录名称。
+    -I 不显示符合范本样式的文件或目录名称。
+    -l 如遇到性质为符号连接的目录，直接列出该连接所指向的原始目录。
+    -n 不在文件和目录清单加上色彩。
+    -N 直接列出文件和目录名称，包括控制字符。
+    -p 列出权限标示。
+    -P 只显示符合范本样式的文件或目录名称。
+    -q 用"?"号取代控制字符，列出文件和目录名称。
+    -s 列出文件或目录大小。
+    -t 用文件和目录的更改时间排序。
+    -u 列出文件或目录的拥有者名称，没有对应的名称时，则显示用户识别码。
+    -x 将范围局限在现行的文件系统中，若指定目录下的某些子目录，其存放于另一个文件系统上，则将该子目录予以排除在寻找范围外。
 ```
 

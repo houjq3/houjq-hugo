@@ -55,14 +55,12 @@ http {
     tcp_nopush on;
     
     ## 通过关闭慢连接来抵御一些DDOS攻击
-    # 设置客户端的响应超时时间
-    send_timeout 3s;
+    ## 读取客户端请求体的超时时间
+    client_body_timeout 5s; 
+    ## 读取客户端请求头的超时时间
+    client_header_timeout 5s;
     ## 超时时间之后会关闭这个连接
     keepalive_timeout 75s;
-    ## 读取客户端请求体的超时时间
-    client_body_timeout 10s; 
-    ## 读取客户端请求头的超时时间
-    client_header_timeout 10s;
     
     ## proxy开启对http1.1
     proxy_http_version 1.1;
@@ -156,7 +154,7 @@ http {
         ## 避免点击劫持
         add_header X-Frame-Options "SAMEORIGIN"; 
         ## 防XSS攻击
-        add_header X-XSS-Protection "1; mode=block";    
+        add_header X-XSS-Protection "1; mode=block";
         ## 禁止嗅探文件类型，特别注意Web应用没有返回Content-Type，
         ## 那么IE9、IE11将拒绝加载相关资源（图形验证码）
         #add_header X-Content-Type-Options nosniff;
