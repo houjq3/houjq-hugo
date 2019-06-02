@@ -37,4 +37,4 @@ A依赖B，B依赖C。当前项目为A，只当B在A项目中的scope，那么c�
 
 
 
-![](/pay.jpg)
+![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)

@@ -71,4 +71,4 @@ $HOME/node/0.10.24/lib/node_modules/
 ```
 
 
-![](/pay.jpg)
+![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
