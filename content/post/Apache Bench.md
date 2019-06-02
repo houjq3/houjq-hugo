@@ -30,7 +30,7 @@ ab -n 全部请求数 -c 并发数测试url，例:
 ab -n 1000 -c 50 <http://www.newdev.gztest.com/>
 ```
 
-这个命令的意思是启动ab，向http://www.newdev.gztest.com发送1000个请求(-n 1000) ，并每次发送10个请求(-c 50) ------也就是说一次都发过去了。
+这个命令的意思是启动ab，向http://www.newdev.gztest.com发送1000个请求(-n 1000) ，并每次发送10个请求(-c 50) ------也就是说一次都发过去了。![](/assets/img01.jpg)
 
 ## 1.2 结果分析
 
