@@ -15,7 +15,7 @@ keywords:
 - 性能优化
 - OpenResty
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201807/nginx.jpg
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175849.jpg
 showSocial: false
 draft: false
 ---

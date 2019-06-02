@@ -13,7 +13,7 @@ keywords:
 - Apache Bench
 - ab
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201807/SupportApache-small.png
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175855.png
 showSocial: false
 draft: false
 ---

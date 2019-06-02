@@ -14,7 +14,7 @@ keywords:
 - zuul
 - gateway
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201808/spring.jpg
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175912.jpg
 showSocial: false
 draft: false
 ---

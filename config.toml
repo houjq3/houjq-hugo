@@ -207,6 +207,11 @@ canonifyurls = true
     class = ""
     icon = ""
     url = "/#about"
+  
+  # [params.header.rightLink]
+  #   class = "open-algolia-search"
+  #   icon = "search"
+  #   url = "/#search"
 
   # Customize link of author avatar in sidebar
   # [params.sidebar.profile]

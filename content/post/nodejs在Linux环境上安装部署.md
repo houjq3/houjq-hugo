@@ -11,7 +11,7 @@ keywords:
 - nodejs
 - Linux
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201807/nodejs.jpg
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175852.jpg
 showSocial: false
 draft: false
 ---

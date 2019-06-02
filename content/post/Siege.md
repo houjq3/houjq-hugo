@@ -11,7 +11,7 @@ keywords:
 - 测试工具
 - Siege
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201807/dog.png
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175853.png
 showSocial: false
 draft: false
 ---

@@ -14,7 +14,7 @@ keywords:
 - jdbc
 - 动态路由
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201808/netflix.jpg
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175908.jpg
 showSocial: false
 draft: false
 ---
@@ -267,8 +267,8 @@ public @interface EnableZuulProxyStore {
 
 ### 类图
 
-![zuul动态路由](/thumbnail/201808/zuul动态路由.jpg)
+![zuul动态路由](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175911.jpg)
 
 ### 架构图
 
-![架构图](/thumbnail/201808/zuul架构图.jpg)
+![架构图](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175909.jpg)

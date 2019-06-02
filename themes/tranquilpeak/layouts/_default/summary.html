@@ -27,7 +27,7 @@
     {{ if and (.Scratch.Get "thumbnailImage") (eq (.Scratch.Get "thumbnailImagePosition") "top")}}
       <a href="{{ .Permalink }}">
         <div class="postShorten-thumbnailimg">
-          <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+          <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}?imageView2/1/w/140/h/140/q/100"/>
         </div>
       </a>
     {{ end }}
@@ -58,7 +58,7 @@
   {{ if and (.Scratch.Get "thumbnailImage") (ne (.Scratch.Get "thumbnailImagePosition") "top")}}
     <a href="{{ .Permalink }}">
       <div class="postShorten-thumbnailimg">
-        <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}"/>
+        <img alt="" itemprop="image" src="{{ .Scratch.Get "thumbnailImage" }}?imageView2/1/w/140/h/140/q/100"/>
       </div>
     </a>
   {{ end }}

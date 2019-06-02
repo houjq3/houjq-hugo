@@ -10,8 +10,8 @@ tags:
 - tag2
 keywords:
 - tech
-thumbnailImagePosition: left
-thumbnailImage: //example.com/image.jpg
+# thumbnailImagePosition: left
+# thumbnailImage: //example.com/image.jpg
 showSocial: false
 draft: true
 ---

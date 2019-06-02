@@ -10,7 +10,7 @@ keywords:
 - Maven
 - scope标签详解
 thumbnailImagePosition: left
-thumbnailImage: /thumbnail/201807/maven.jpg
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175850.jpg
 showSocial: false
 draft: false
 ---
