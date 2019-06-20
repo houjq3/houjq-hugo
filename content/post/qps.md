@@ -1,5 +1,5 @@
 ---
-title: "吞吐量（TPS）、QPS、并发数、响应时间（RT）概念"
+title: "吞吐量(TPS)、QPS、并发数、响应时间(RT)概念"
 slug: "tps-qps"
 date: 2019-06-20T14:59:59+08:00
 categories:
