@@ -13,16 +13,18 @@ keywords:
 - OpenResty
 - GoAccess
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621093249.png
+thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621094024.png
 showSocial: false
 draft: false
 ---
 
 GoAccess 是一款开源的且具有交互视图界面的实时 Web 日志分析工具，通过你的 Web 浏览器或者 *nix 系统下的终端程序(terminal)即可访问。
 
-能为系统管理员提供快速且有价值的 HTTP 统计，并以在线可视化服务器的方式呈现。
-
 <!--more-->
+
+GoAccess 是一款开源的且具有交互视图界面的实时 Web 日志分析工具，通过你的 Web 浏览器或者 *nix 系统下的终端程序(terminal)即可访问。
+
+能为系统管理员提供快速且有价值的 HTTP 统计，并以在线可视化服务器的方式呈现。
 
 ## 依赖
 
