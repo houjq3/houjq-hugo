@@ -273,57 +273,57 @@ oauth: function oauth(param) {
 
 ```js
 <script>
-        import { baseApi } from "@/service/api";
-        import { Base64 } from 'js-base64';
+import { baseApi } from "@/service/api";
+import { Base64 } from 'js-base64';
 
-        export default {
-                name: "BlankContent",
-                created() {
-                        this.redirectToUrl();
-                },
-                data(){
-                        return{
-                                redirectLocation: ""
-                        }
-                },
-                methods: {
-                        redirectToUrl: function() {
-                                this.getLocation();
-                                let pathname = window.location.href;
-                                if(pathname.indexOf("code") !== -1) {
-                                        let temp = pathname.substring(pathname.indexOf("code") + 5);
-                                        let code = temp.substring(0, temp.indexOf("#"));
-                                        let param = {
-                                                redirect_uri: this.redirectLocation + "#/blank",
-                                                registration_id: "bss-login",
-                                                code: code
-                                        }
-                                        baseApi.oauth(param).then(res => {
-                                                sessionStorage.setItem('userName', res.data.username);
-                                                sessionStorage.setItem("sessionData", Base64.encode(JSON.stringify(res.data)));
-                                                sessionStorage.setItem("sessionDataOriginal", JSON.stringify(res.data));
-                                                this.goToIndex();
-                                        });
-                                } else {
-                                        baseApi.remoteLogin().then(res =>{
-                                                // 如果登录成功，再次访问起始地址，直接跳转到首页
-                                                if(res !== undefined && res.status === 200 && res.data.username !== null){
-                                                        this.goToIndex();
-                                                }
-                                        });
-                                }
-                        },
-                        // 跳转到首页
-                        goToIndex: function(){
-                                window.location.href = this.redirectLocation + "#/main/index";
-                        },
-                        // 获取地址协议和端口号
-                        getLocation: function(){
-                                let location = window.location;
-                                this.redirectLocation = location.protocol + "//" + location.host + "/";
-                        }
-                }
+export default {
+    name: "BlankContent",
+    created() {
+        this.redirectToUrl();
+    },
+    data(){
+        return{
+            redirectLocation: ""
         }
+    },
+    methods: {
+        redirectToUrl: function() {
+            this.getLocation();
+            let pathname = window.location.href;
+            if(pathname.indexOf("code") !== -1) {
+                let temp = pathname.substring(pathname.indexOf("code") + 5);
+                let code = temp.substring(0, temp.indexOf("#"));
+                let param = {
+                    redirect_uri: this.redirectLocation + "#/blank",
+                    registration_id: "bss-login",
+                    code: code
+                }
+                baseApi.oauth(param).then(res => {
+                    sessionStorage.setItem('userName', res.data.username);
+                    sessionStorage.setItem("sessionData", Base64.encode(JSON.stringify(res.data)));
+                    sessionStorage.setItem("sessionDataOriginal", JSON.stringify(res.data));
+                    this.goToIndex();
+                });
+            } else {
+                baseApi.remoteLogin().then(res =>{
+                    // 如果登录成功，再次访问起始地址，直接跳转到首页
+                    if(res !== undefined && res.status === 200 && res.data.username !== null){
+                        this.goToIndex();
+                    }
+                });
+            }
+        },
+        // 跳转到首页
+        goToIndex: function(){
+            window.location.href = this.redirectLocation + "#/main/index";
+        },
+        // 获取地址协议和端口号
+        getLocation: function(){
+            let location = window.location;
+            this.redirectLocation = location.protocol + "//" + location.host + "/";
+        }
+    }
+}
 </script>
 ```
 
