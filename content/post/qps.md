@@ -15,7 +15,7 @@ keywords:
 - 响应时间
 - RT
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190620152234.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190620152234.png
 showSocial: false
 draft: false
 ---

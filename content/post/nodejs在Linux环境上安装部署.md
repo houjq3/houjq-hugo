@@ -11,7 +11,7 @@ keywords:
 - nodejs
 - Linux
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175852.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175852.jpg
 showSocial: false
 draft: false
 ---
@@ -71,4 +71,4 @@ $HOME/node/0.10.24/lib/node_modules/
 ```
 
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)

@@ -10,7 +10,7 @@ keywords:
 - Maven
 - scope标签详解
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175850.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175850.jpg
 showSocial: false
 draft: false
 ---
@@ -37,4 +37,4 @@ A依赖B，B依赖C。当前项目为A，只当B在A项目中的scope，那么c�
 
 
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)

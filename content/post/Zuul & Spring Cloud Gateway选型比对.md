@@ -14,7 +14,7 @@ keywords:
 - zuul
 - gateway
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175912.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175912.jpg
 showSocial: false
 draft: false
 ---

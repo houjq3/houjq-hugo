@@ -11,7 +11,7 @@ keywords:
 - Nginx
 - 执行阶段
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175849.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175849.jpg
 showSocial: false
 draft: false
 ---
@@ -97,4 +97,4 @@ location /mixed {
 
 不同的阶段，有不同的处理行为，这是 OpenResty 的一大特色。学会它，适应它，会给你打开新的一扇门。这些东西不是 OpenResty 自身所创，而是 Nginx module 对外开放的处理阶段。理解了他，也能更好的理解 Nginx 的设计思维。
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)

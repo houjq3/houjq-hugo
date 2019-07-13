@@ -9,7 +9,7 @@ tags:
 keywords:
 - 登录
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621102200.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621102200.png
 showSocial: false
 draft: false
 ---
@@ -22,7 +22,7 @@ draft: false
 
 **单点登陆** : 在一个企业中, 系统由多个子系统构成, 访问每个子系统都需要单独登陆, 造成重复登陆多次, 操作复杂, 单点登陆即只需要登陆一次, 即可访问所有子系统.
 
-![Cookie&Session](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621100040.png)
+![Cookie&Session](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621100040.png)
 
 在主流的登陆方案中, 都是使用 `cookie/session` 的解决方案, 即 浏览器端存储 `cookie` 信息, 服务端存储 `session` 信息, 浏览器的每次操作, 都会携带 `cookie` 到服务端, 服务端校验该 `cookie `是否已存在对应的 `session` 信息, 如果存在, 就允许浏览器进行操作, 不存在, 说明用户未登陆, 提示用户登陆. 登陆后, 创建cookie/session关联关系, 后续即可访问即可正常进行.
 
@@ -34,7 +34,7 @@ draft: false
 
 ### 整体流程说明
 
-![OAuth2 authorization code](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101219.png)
+![OAuth2 authorization code](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101219.png)
 
 | NOTE | 单点登陆流程基于OAuth2协议的 授权码模式(authorization code) |
 | ---- | ----------------------------------------------------------- |
@@ -72,7 +72,7 @@ draft: false
 
 在前后端分离项目中, 前端一般使用Nginx作为Web服务器. 但是原生的Nginx作为Http服务器时, 实现OAuth2 Client功能和Session管理功能比较困难(基于OpenRestry技术可以实现, KONG也有相关的一些插件支持). 因此将 OAuth2 Client的功能和Session管理功能下沉到 Gateway层实现. 由Gateway 与前端 协同完成单点登陆功能.
 
-![基于网关的单点登陆](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101258.png)
+![基于网关的单点登陆](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101258.png)
 
 #### 第一次登陆
 
@@ -162,11 +162,11 @@ Content-Type: application/json;charset=UTF-8
 
 - 网关在拦截到 `/login/oauth2/code/{registrationId}` 的请求后, 会获取 `code` 值, 在网关内部 通过 `POST` 和 `Basic Auth` 的请求调用认证服务器, 例如: <http://172.21.2.41:9010/oauth/token?client_id=bss-login&grant_type=authorization_code&redirect_uri=https://baidu.com&code=i6NV3c> .网关服务器校验 `code` 和 `Basic Auth` 成功后, 返回 `access_token` .
 
-![网关内部获取access_token](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101339.png)
+![网关内部获取access_token](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101339.png)
 
 - 网关取到 `access_token` 后, 再使用 `access_token` 的值构建 `http://172.21.2.41:9010/user?access_token=dc8ef253-192e-4273-8016-48ce5cf3432a` 请求访问 `资源服务器` (此处资源服务器与认证服务器是同一个应用), 获得用户信息.
 
-![网关内部获取登陆用户信息](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101354.png)
+![网关内部获取登陆用户信息](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101354.png)
 
 - 根据返回的用户信息创建 `session`
 
@@ -407,7 +407,7 @@ logout () {
 
 应用在网关登陆认证成功后, 所有通过网关请求 **后端服务** 的 Http Request, 网关会自动为其增加一组 `x-session-` 前缀的Http Headers, 这些 Http Headers携带了登陆的 Session信息, 后端服务可以通过这些Http Headers获取到 session信息.
 
-![oauth2: access-token](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101434.png)
+![oauth2: access-token](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101434.png)
 
 #### 后端获取Session
 
@@ -434,7 +434,7 @@ public String hello(@PathVariable("latency") int latency,
 
 网关作为 **Resource Server(资源服务器)**, 保护后端服务的API, 三方如果需要访问网关上的API, 需要到 **Authorization Server(授权认证服务器)** 上获取access_token, 通过access_token 才能访问网关上的API.
 
-![oauth2: access-token](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101513.png)
+![oauth2: access-token](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101513.png)
 
 ### OAuth2密码模式
 
@@ -442,7 +442,7 @@ public String hello(@PathVariable("latency") int latency,
 
 在这种模式中，用户必须把自己的密码给客户端，但是客户端不得储存密码。这通常用在用户对客户端高度信任的情况下，比如客户端是操作系统的一部分，或者由一个著名公司出品。而认证服务器只有在其他授权模式无法执行的情况下，才能考虑使用这种模式.
 
-![Resource Owner Password Credentials Grant](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621101545.png)
+![Resource Owner Password Credentials Grant](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621101545.png)
 
 网关的认证处理
 

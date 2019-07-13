@@ -15,7 +15,7 @@ keywords:
 - 性能优化
 - OpenResty
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175849.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175849.jpg
 showSocial: false
 draft: false
 ---
@@ -291,4 +291,4 @@ CheckRule "$XSS >= 8" BLOCK;
 
 
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)

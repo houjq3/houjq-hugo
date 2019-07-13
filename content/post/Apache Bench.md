@@ -13,7 +13,7 @@ keywords:
 - Apache Bench
 - ab
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175855.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175855.png
 showSocial: false
 draft: false
 ---
@@ -177,5 +177,5 @@ Percentage of the requests served within a certain time (ms)
  100%   3314 (longest request)
 ```
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
 

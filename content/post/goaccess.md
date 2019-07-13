@@ -13,7 +13,7 @@ keywords:
 - OpenResty
 - GoAccess
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621094024.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621094024.png
 showSocial: false
 draft: false
 ---
@@ -152,7 +152,7 @@ sh goaccess.sh start
 
 访问 `http://安全网关管理节点/goaccess.html`，展示实时数据
 
-![FireShot](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190621092130.png)
+![FireShot](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621092130.png)
 
 ## 指标汇总
 

@@ -11,7 +11,7 @@ keywords:
 - 测试工具
 - Siege
 thumbnailImagePosition: left
-thumbnailImage: http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602175853.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175853.png
 showSocial: false
 draft: false
 ---
@@ -109,4 +109,4 @@ Longest transaction: 3.12 //每次传输所花最长时间
 Shortest transaction: 0.00 //每次传输所花最短时间
 ```
 
-![](http://psgf5bfka.bkt.clouddn.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
