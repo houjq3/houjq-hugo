@@ -109,4 +109,4 @@ Longest transaction: 3.12 //每次传输所花最长时间
 Shortest transaction: 0.00 //每次传输所花最短时间
 ```
 
-![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?x-oss-process=style/140_140)

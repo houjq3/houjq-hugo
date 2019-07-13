@@ -177,5 +177,5 @@ Percentage of the requests served within a certain time (ms)
  100%   3314 (longest request)
 ```
 
-![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?x-oss-process=style/250_250)
 

@@ -37,4 +37,4 @@ A依赖B，B依赖C。当前项目为A，只当B在A项目中的scope，那么c�
 
 
 
-![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?x-oss-process=style/250_250)

@@ -171,4 +171,4 @@ idea快捷键整理大全
 3. Ctrl+T，更新项目
 4. Ctrl+Alt+Shift+D，显示变化
 
-![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?imageView2/1/w/250/h/250/q/100)
+![](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602180548.jpg?x-oss-process=style/250_250)
