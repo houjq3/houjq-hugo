@@ -21,7 +21,7 @@ showSocial: false
 draft: false
 ---
 
-SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则…认识这些词语嘛？
+借助以下简短的介绍，你就可以快速了解这七大人生工具了。
 
 <!--more-->
 
