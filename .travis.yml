@@ -1,4 +1,4 @@
-language: go
+language: bash
 os: linux
 dist: xenial
 env:
@@ -25,6 +25,3 @@ deploy:
   token: "$GITHUB_TOKEN"
   email: 18734141014@qq.com
   name: rhubard
-addons:
-  ssh_known_hosts:
-    - 47.91.224.140
