@@ -1,0 +1,23 @@
+language: go
+
+go:
+  - master
+
+install:
+  - go get github.com/gohugoio/hugo
+  - hugo version
+
+script:
+  - hugo # This commands builds your website on travis
+  - cp README.md public
+  - cp CNAME public
+
+deploy:
+  local_dir: public # Default static site output dir for Hugo
+  repo: rhubard/rhubard.github.io # This is the slug of the repo you want to deploy your site to
+  target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
+  email: 18734141014@qq.com
+  name: "rhubard"
