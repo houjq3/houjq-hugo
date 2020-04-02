@@ -1,6 +1,6 @@
 #!/bin/bash
 
-HUGO_FILENAME="hugo_${HUGO_RELEASE}_linux_amd64"
+HUGO_FILENAME="hugo_${HUGO_RELEASE}_Linux-64bit"
 HUGO_TARFILE="${HUGO_FILENAME}.tar.gz"
 
 wget https://github.com/gohugoio/hugo/releases/download/v$HUGO_RELEASE/$HUGO_TARFILE
