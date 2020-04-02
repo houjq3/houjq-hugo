@@ -9,10 +9,9 @@ before_install:
     -in ./.travis/id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
 install:
-  - "./.travis/get_deps.sh"
+  - "./.travis/deps.sh"
 script:
-  - "./.travis/build_all.sh"
-  - cp CNAME public
+  - "./.travis/build.sh"
 after_success:
   - scp -o StrictHostKeyChecking=no -i "~/.ssh/id_rsa" -r public hugo@47.91.224.140:~/pages
 deploy:
