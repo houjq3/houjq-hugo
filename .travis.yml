@@ -15,7 +15,7 @@ script:
   - ./.travis/build_all.sh
 
 deploy:
-  cleanup: true
+  cleanup: false
   provider: script
   script: ./.travis/deploy.sh
 
