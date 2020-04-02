@@ -11,8 +11,9 @@ env:
 install: ./.travis/get_deps.sh
 
 script:
+  - ls -l
   - ./.travis/build_all.sh
-  - ll
+
 
 deploy:
   cleanup: false
