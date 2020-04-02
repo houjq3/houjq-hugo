@@ -3,12 +3,14 @@ os: linux
 dist: xenial
 env:
   global:
-  - HUGO_RELEASE=0.53
+    - HUGO_RELEASE=0.53
 install:
-- "./.travis/get_deps.sh"
+  - "./.travis/get_deps.sh"
 script:
-- "./.travis/build_all.sh"
-- cp CNAME public
+  - "./.travis/build_all.sh"
+  - cp CNAME public
+after_success:
+  - scp -r public hugo@47.91.224.140:~/pages
 deploy:
   local_dir: public
   repo: rhubard/rhubard.github.io
@@ -20,5 +22,5 @@ deploy:
   email: 18734141014@qq.com
   name: rhubard
 before_install:
-- openssl aes-256-cbc -K $encrypted_0836b113fae8_key -iv $encrypted_0836b113fae8_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  - openssl aes-256-cbc -K $encrypted_0836b113fae8_key -iv $encrypted_0836b113fae8_iv
+    -in id_rsa.enc -out ~\/.ssh/id_rsa -d
