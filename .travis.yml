@@ -26,7 +26,7 @@ deploy:
   target_branch: master # GitHub pages branch to deploy to (in other cases it can be gh-pages)
   provider: pages
   strategy: git
-  skip_cleanup: true
+  cleanup: false
   token: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
   email: 18734141014@qq.com
   name: "rhubard"
