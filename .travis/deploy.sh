@@ -1,6 +1,2 @@
 #!/bin/bash
-hostname
-
-ifconfig
-
-pwd
+ls -l
