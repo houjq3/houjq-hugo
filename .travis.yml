@@ -29,3 +29,4 @@ deploy:
   deploy_key: $GITHUB_TOKEN # This is the authentication which you will setup in the next step in travis-ci dashboard
   email: 18734141014@qq.com
   name: "rhubard"
+  edge: true
