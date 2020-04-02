@@ -4,6 +4,10 @@ dist: xenial
 env:
   global:
     - HUGO_RELEASE=0.53
+before_install:
+  - openssl aes-256-cbc -K $encrypted_0836b113fae8_key -iv $encrypted_0836b113fae8_iv
+    -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
 install:
   - "./.travis/get_deps.sh"
 script:
@@ -21,6 +25,3 @@ deploy:
   token: "$GITHUB_TOKEN"
   email: 18734141014@qq.com
   name: rhubard
-before_install:
-  - openssl aes-256-cbc -K $encrypted_0836b113fae8_key -iv $encrypted_0836b113fae8_iv
-    -in id_rsa.enc -out ~\/.ssh/id_rsa -d
