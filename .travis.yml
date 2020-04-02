@@ -8,7 +8,9 @@ env:
   global:
     - HUGO_RELEASE=0.53
 
-install: ./.travis/get_deps.sh
+install: 
+  - ./.travis/get_deps.sh
+  - ls -l
 
 script:
   - ls -l
