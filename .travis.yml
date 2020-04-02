@@ -15,7 +15,7 @@ script:
   - ./.travis/build_all.sh
   - cp CNAME public
 after_success:
-  - scp -o stricthostkeychecking=no -r public hugo@47.91.224.140:~/pages
+  - scp -o stricthostkeychecking=no -i ~/.ssh/id_rsa -r public hugo@47.91.224.140:~/pages
 deploy:
   local_dir: public
   repo: rhubard/rhubard.github.io
