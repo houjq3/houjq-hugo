@@ -10,9 +10,9 @@ before_install:
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 47.91.224.140\n    StrictHostKeyChecking no\n" >> ~/.ssh/config
 install:
-  - ./.travis/get_deps.sh
+  - "./.travis/get_deps.sh"
 script:
-  - ./.travis/build_all.sh
+  - "./.travis/build_all.sh"
   - cp CNAME public
 after_success:
   - scp -o stricthostkeychecking=no -i ~/.ssh/id_rsa -r public hugo@47.91.224.140:~/pages
