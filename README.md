@@ -19,5 +19,7 @@ GitHub：https://github.com/gohugoio/hugo
 GitHub：https://github.com/kakawait/hugo-tranquilpeak-theme
 
 > Authors: Louis Barranqueiro (LouisBarranqueiro) and Thibaud Leprêtre (kakawait)
+> 
 > Version: 0.4.7-BETA (based on Hexo version 1.10.0)
+> 
 > Compatibility: Hugo v0.53
