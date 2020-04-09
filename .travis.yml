@@ -13,7 +13,7 @@ install:
 script:
   - "./.travis/build.sh"
 after_success:
-  - scp -o StrictHostKeyChecking=no -i "~/.ssh/id_rsa" -r public/. hugo@47.91.224.140:pages/
+  - "./.travis/deploy.sh"
 deploy:
   local_dir: public
   repo: rhubard/rhubard.github.io
