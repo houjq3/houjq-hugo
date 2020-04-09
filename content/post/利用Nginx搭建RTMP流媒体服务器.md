@@ -15,7 +15,7 @@ thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/202004092246
 showSocial: false
 draft: false
 ---
-
+将视频流实时上传给服务器进行解析，使用RTMP直播服务器。因此将搭建RTMP服务器的过程分享给大家。
 <!--more-->
 
 ## 搭建RTMP流媒体服务器
