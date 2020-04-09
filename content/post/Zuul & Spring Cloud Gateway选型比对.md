@@ -3,8 +3,7 @@ title: "Zuul & Spring Cloud Gateway选型比对"
 slug: "zuul-gateway"
 date: 2018-08-30T11:02:10+08:00
 categories:
-- spring cloud
-- gateway
+- Java
 tags:
 - spring cloud
 - zuul

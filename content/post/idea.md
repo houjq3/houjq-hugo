@@ -3,8 +3,7 @@ title: "idea快捷键整理"
 slug: "idea-hot-key"
 date: 2018-07-30T09:32:31+08:00
 categories:
-- IDE
-- IntelliJ IDEA
+- Java
 tags:
 - IDE
 - IntelliJ IDEA

@@ -3,12 +3,14 @@ title: maven中scope标签详解
 slug: maven-scope
 date: 2018-07-11T18:32:31+08:00
 categories:
-- Maven
+- Java
 tags:
+- Java
 - Maven
 keywords:
+- Java
 - Maven
-- scope标签详解
+- scope
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175850.jpg
 showSocial: false

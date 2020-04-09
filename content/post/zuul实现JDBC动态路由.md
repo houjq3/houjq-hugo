@@ -3,8 +3,7 @@ title: "Zuul实现JDBC动态路由"
 slug: "zuul-jdbc"
 date: 2018-08-16T12:18:24+08:00
 categories:
-- spring cloud
-- zuul
+- Java
 tags:
 - spring cloud
 - zuul
