@@ -1,14 +1,14 @@
 ---
-title: "nodejs在Linux环境上安装部署"
+title: "NodeJs在Linux环境上安装部署"
 slug: nodejs-build
 date: 2018-07-13T11:59:53+08:00
 categories:
-- nodejs
+- NodeJs
 tags:
-- nodejs
+- NodeJs
 - Linux
 keywords:
-- nodejs
+- NodeJs
 - Linux
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175852.jpg

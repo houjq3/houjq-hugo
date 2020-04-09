@@ -3,11 +3,15 @@ title: "OAuth2认证鉴权"
 slug: "oauth2"
 date: 2019-06-21T09:52:28+08:00
 categories:
-- 登录
+- 架构设计
 tags:
+- 架构设计
 - 登录
+- OAuth2
 keywords:
+- 架构设计
 - 登录
+- OAuth2
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190621102200.png
 showSocial: false
