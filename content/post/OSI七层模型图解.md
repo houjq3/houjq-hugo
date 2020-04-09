@@ -4,7 +4,6 @@ slug: "OSI"
 date: 2020-04-09T20:09:44+08:00
 categories:
 - 网络
-- TCP/IP
 tags:
 - 网络
 - OSI七层模型
