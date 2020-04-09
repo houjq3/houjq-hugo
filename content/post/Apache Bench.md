@@ -3,7 +3,7 @@ title: "Apache Bench"
 slug: ab
 date: 2018-07-23T15:11:49+08:00
 categories:
-- test
+- 测试
 tags:
 - 测试工具
 - Apache Bench
