@@ -3,13 +3,14 @@ title: "Windows10家庭版安装Docker Desktop"
 slug: "Docker_desktop"
 date: 2019-07-26T16:08:27+08:00
 categories:
-- docker
+- Docker
 tags:
-- docker
+- Docker
 - windows
 keywords:
 - Windows10家庭版
 - Docker
+- Docker Desktop
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190726161257.png
 showSocial: false
