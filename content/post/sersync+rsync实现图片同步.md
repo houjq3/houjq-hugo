@@ -1,5 +1,5 @@
 ---
-title: "sersync+rsync实现图片同步"
+title: "sersync+rsync实现图片实时同步"
 slug: "sersync-rsync"
 date: 2020-04-09T23:34:48+08:00
 categories:
@@ -16,8 +16,11 @@ showSocial: false
 draft: false
 ---
 
-FTP推送图片，实时性差、不可靠的缺点，并且随着同步文件量增多，同步耗时变长；而短期内搞出一个分布式文件存储也不现实，确定采用sersync+rsync组件实现图片实时同步到资源服务器。
+采用sersync+rsync组件实现图片实时同步到资源服务器。
+
 <!--more-->
+
+FTP推送图片，实时性差、不可靠的缺点，并且随着同步文件量增多，同步耗时变长；而短期内搞出一个分布式文件存储也不现实，确定采用sersync+rsync组件实现图片实时同步到资源服务器。
 
 ## 介绍
 
@@ -33,12 +36,10 @@ FTP推送图片，实时性差、不可靠的缺点，并且随着同步文件�
 
 ## 部署架构
 
-- 31部署 sersync
-- 64~71为图片服务器，部署rsync
+- 31部署 `sersync`
+- 64~71为图片服务器，部署 `rsync`
 
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200409233526.jpg)
-
- 
 
 ## 安装配置
 
@@ -73,8 +74,6 @@ FTP推送图片，实时性差、不可靠的缺点，并且随着同步文件�
 	<modify start="false"/>
 	<!-- 设置要监控的事件 -->
     </inotify>
-
-
     <sersync>
     <localpath watch="/applications/mios-market-config-rest/material">
     <!-- 设置要监控的目录 -->
@@ -111,15 +110,13 @@ FTP推送图片，实时性差、不可靠的缺点，并且随着同步文件�
 </head>
 {{</codeblock>}}
 
-3. 启动sersync
+3. 启动 `sersync`
 
 ```shell
 $sersync_home/sersync2 -d -r -o $sersync_home/confxml.xml
 ```
 
 ### Rsync
-
-版本：rsync-3.1.3.tar.gz
 
 1. 解压 `rsync-3.1.3.tar.gz`
 
