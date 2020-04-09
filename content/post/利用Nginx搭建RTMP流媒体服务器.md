@@ -1,6 +1,6 @@
 ---
 title: "利用Nginx搭建RTMP流媒体服务器"
-slug: "nginx-rtpm"
+slug: "nginx-rtmp"
 date: 2020-04-09T22:15:12+08:00
 categories:
 - Nginx
