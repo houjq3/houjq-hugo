@@ -44,25 +44,20 @@ EditThisCookie作为Chrome的一个插件，可以十分方便的用来查看当
 
 ### 新建cookie
 
-1. 在EditThisCookie管理cookie页面。点击 +：然后填写相关信息即可创建一个新的cookie
+在EditThisCookie管理cookie页面。点击 +：然后填写相关信息即可创建一个新的cookie
 
 ![image-20200410150752666](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150802.png)
 
 ### 阻止Cookie
 
-1. 点击进入一个cookie后，点击禁止符号：然后根据条件填写过滤条件,设置后，点击添加规则即可。如图所示：
-
+点击进入一个cookie后，点击禁止符号：然后根据条件填写过滤条件,设置后，点击添加规则即可。那么之后这个cookie不回再被这个页面“引用”。
 ![image-20200410150820755](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150822.png)
-
-2. 那么之后这个cookie不回再被这个页面“引用”。
 
 ### 恢复Cookie
 
-1. 点击EditThisCookie 右上面的扳手设置符号。
+点击EditThisCookie 右上面的扳手设置符号。
 
 ![image-20200410150835992](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150837.png)
-
-
 
 ![image-20200410150844195](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150845.png)
 
@@ -76,7 +71,7 @@ EditThisCookie作为Chrome的一个插件，可以十分方便的用来查看当
 
 ### 其他选项
 
-- 在EditThisCookie的选项中可以详细查看，以上几个是最常用的。
+在EditThisCookie的选项中可以详细查看，以上几个是最常用的。
 
 ## 总结
 

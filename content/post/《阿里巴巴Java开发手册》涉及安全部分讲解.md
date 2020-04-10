@@ -25,7 +25,6 @@ java的访问控制可以通过private、protect关键字，避免被外部反�
 
 1. 如果不允许外部直接通过 new 来创建对象，那么构造方法必须是 private。
    如果构造方法是private，则外部new 时,编译器检查为The constructor PrivateTool() is not visible，需要设置为一定的权限，default则为package访问权限。
-
 ```java
 public class PrivateTool {
   private PrivateTool() {
