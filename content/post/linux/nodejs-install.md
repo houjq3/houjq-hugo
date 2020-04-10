@@ -3,7 +3,7 @@ title: "NodeJs在Linux环境上安装部署"
 slug: nodejs-build
 date: 2018-07-13T11:59:53+08:00
 categories:
-- NodeJs
+- Linux
 tags:
 - NodeJs
 - Linux
