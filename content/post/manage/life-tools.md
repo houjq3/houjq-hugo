@@ -1,5 +1,5 @@
 ---
-title: "SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则"
+title: "七大人生工具"
 slug: "Life-Tools"
 date: 2019-07-17T09:18:12+08:00
 categories:
@@ -20,19 +20,15 @@ showSocial: false
 draft: false
 ---
 
-借助以下简短的介绍，你就可以快速了解这七大人生工具了。
+SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则
 
 <!--more-->
 
-SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则…认识这些词语嘛？是不是感觉很眼熟？可是，它们到底代表什么呢？是不是有点懵圈？没关系，借助以下简短的介绍，你就可以快速了解这七大人生工具了。
+…认识这些词语嘛？是不是感觉很眼熟？可是，它们到底代表什么呢？是不是有点懵圈？没关系，借助以下简短的介绍，你就可以快速了解这七大人生工具了。
 
 ## 1、SWOT分析法
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092112.png)
-
-
 
 Strengths：优势
 
@@ -46,11 +42,7 @@ Threats：威胁
 
 ## 2、PDCA循环规则
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092142.png)
-
-
 
 Plan：制定目标与计划；
 
@@ -64,11 +56,7 @@ Action：纠正偏差，对成果进行标准化，并确定新的目标，制�
 
 ## 3、6W2H法
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092211.png)
-
-
 
 What：工作的内容和达成的目标；
 
@@ -90,11 +78,7 @@ How much：需要多少成本？
 
 ## 4、SMART原则
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092218.png)
-
-
 
 Specific 具体的；
 
@@ -122,11 +106,7 @@ Time based 时间的。
 
 ## 5、时间管理--重要与紧急
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092315.png)
-
-
 
 **A、重要且紧急**
 
@@ -150,11 +130,7 @@ Time based 时间的。
 
 ##  **6、**任务分解法（WBS）
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092223.png)
-
-
 
 WBS，即Work Breakdown Structure。如何进行WBS分解：目标→任务→工作→活动。
 
@@ -184,11 +160,7 @@ WBS，即Work Breakdown Structure。如何进行WBS分解：目标→任务→�
 
 ## 7、二八原则
 
-
-
 ![img](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190717092409.png)
-
-
 
 **巴列特定律：**“总结果的80%是由总消耗时间中的20%所形成的。” 按事情的“重要程度”编排事务优先次序的准则是建立在“重要的少数与琐碎的多数”的原理的基础上。
 
@@ -204,8 +176,6 @@ WBS，即Work Breakdown Structure。如何进行WBS分解：目标→任务→�
 
 > **意义：**这启示我们在工作中要善于抓主要矛盾，善于从纷繁复杂的工作中理出头绪，把资源用在最重要、最紧迫的事情上。
 
-
-
 作者：请叫我薛公子
 
 链接：https://www.jianshu.com/p/4087b96b7e50
@@ -213,6 +183,3 @@ WBS，即Work Breakdown Structure。如何进行WBS分解：目标→任务→�
 来源：简书
 
 简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。
-
-
-

@@ -38,13 +38,11 @@ EditThisCookie作为Chrome的一个插件，可以十分方便的用来查看当
 5. 点击最上面的垃圾箱，可以删除全部的cookie。
 
 6. 点击一个cookie后，可以进行单个cookie的删除，内容一般都可以修改，可以修改cookie的名称
-
 ![image-20200410150735481](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150736.png)
 
 ### 新建cookie
 
 在EditThisCookie管理cookie页面。点击 +：然后填写相关信息即可创建一个新的cookie
-
 ![image-20200410150752666](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150802.png)
 
 ### 阻止Cookie
