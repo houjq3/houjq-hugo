@@ -24,7 +24,7 @@ draft: false
 java的访问控制可以通过private、protect关键字，避免被外部反射机制调用实现。
 
 1. 如果不允许外部直接通过 new 来创建对象，那么构造方法必须是 private。
-   如果构造方法是private，则外部new 时,编译器检查为The constructor PrivateTool() is not visible，需要设置为一定的权限，default则为package访问权限
+   如果构造方法是private，则外部new 时,编译器检查为The constructor PrivateTool() is not visible，需要设置为一定的权限，default则为package访问权限。
 
 ```java
 public class PrivateTool {
@@ -35,21 +35,15 @@ public class PrivateTool {
 ```
 
 2. 工具类不允许有 public 或 default 构造方法。
-
    这样的工具类不够优雅
 
-3.  类非 static 成员变量并且与子类共享，必须是 protected。
-
+3. 类非 static 成员变量并且与子类共享，必须是 protected。
    保持类与子类的成员变量的权限一致
 
 4. 类非 static 成员变量并且仅在本类使用，必须是 private。
-
 5. 类 static 成员变量如果仅在本类使用，必须是 private。
-
 6. 若是 static 成员变量，必须考虑是否为 final。
-
 7. 类成员方法只供类内部调用，必须是 private。
-
 8. 类成员方法只对继承类公开，那么限制为 protected。
 
 以上比较详细的说明了关键字的使用方法。
