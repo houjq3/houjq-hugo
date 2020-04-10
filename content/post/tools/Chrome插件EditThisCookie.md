@@ -31,7 +31,6 @@ EditThisCookie作为Chrome的一个插件，可以十分方便的用来查看当
 1. 当安装完成后，在你的浏览器的右上角会出现一个甜饼的图标
 2. 左击它可以显示当前所在页面的cookie列表
 3. 当然最简单的就是在你要调试cookie的页面，右击选项菜单EditThisCookie，即可打开cookie编辑页面
-
  ![image-20200410150716616](https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410150720.png)
 
 4. 点击进入editthiscookie 编辑cookie页面后。如图所示：

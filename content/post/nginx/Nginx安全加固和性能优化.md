@@ -6,9 +6,7 @@ categories:
 - Nginx
 tags:
 - Nginx
-- 安全加固
-- 性能优化
-- OpenResty
+- 安全
 keywords:
 - Nginx
 - 安全加固
