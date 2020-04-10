@@ -19,7 +19,7 @@ title = "侯俊青的博客"
 theme = "tranquilpeak"
 # disqusShortname = "侯俊青的博客"
 # googleAnalytics = "UA-123-45"
-paginate = 7
+paginate = 8
 canonifyurls = true
 
 [permalinks]
