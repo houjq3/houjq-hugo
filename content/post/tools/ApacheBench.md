@@ -1,17 +1,15 @@
 ---
 title: "Apache Bench"
-slug: ab
+slug: "apache-bench"
 date: 2018-07-23T15:11:49+08:00
 categories:
-- 测试
+- 工具
 tags:
 - 测试工具
 - Apache Bench
-- ab
 keywords:
 - 测试工具
 - Apache Bench
-- ab
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20190602175855.png
 showSocial: false

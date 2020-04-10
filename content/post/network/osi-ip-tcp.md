@@ -1,6 +1,6 @@
 ---
 title: "OSI七层模型图解"
-slug: "OSI"
+slug: "osi-ip-tcp"
 date: 2020-04-09T20:09:44+08:00
 categories:
 - 网络

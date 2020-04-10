@@ -1,9 +1,9 @@
 ---
 title: "Windows10家庭版安装Docker Desktop"
-slug: "Docker_desktop"
+slug: "docker-desktop"
 date: 2019-07-26T16:08:27+08:00
 categories:
-- Docker
+- 虚机技术
 tags:
 - Docker
 - windows

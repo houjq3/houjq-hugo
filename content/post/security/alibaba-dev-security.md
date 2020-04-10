@@ -1,6 +1,6 @@
 ---
 title: "《阿里巴巴Java开发手册》涉及安全部分讲解"
-slug: "alibaba-security"
+slug: "alibaba-dev-security"
 date: 2020-04-10T15:31:41+08:00
 categories:
 - 安全

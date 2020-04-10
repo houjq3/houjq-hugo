@@ -1,6 +1,6 @@
 ---
 title: "Chrome插件EditThisCookie"
-slug: "EditThisCookie"
+slug: "edit-this-cookie"
 date: 2020-04-10T15:03:56+08:00
 categories:
 - 工具

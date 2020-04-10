@@ -3,7 +3,7 @@ title: "Siege"
 slug: siege
 date: 2018-07-23T17:21:26+08:00
 categories:
-- 测试
+- 工具
 tags:
 - 测试工具
 - Siege

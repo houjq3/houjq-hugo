@@ -1,6 +1,6 @@
 ---
 title: "Nginx执行阶段概念"
-slug: nginx-phase
+slug: ngx-lua-phase
 date: 2018-07-28T18:32:56+08:00
 categories:
 - Nginx
