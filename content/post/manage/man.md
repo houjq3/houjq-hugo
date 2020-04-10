@@ -10,7 +10,7 @@ keywords:
 - 管理
 - 男人
 thumbnailImagePosition: left
-thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200411002542.png
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200411005406.png
 coverImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/img01.jpg
 showSocial: false
 draft: false
