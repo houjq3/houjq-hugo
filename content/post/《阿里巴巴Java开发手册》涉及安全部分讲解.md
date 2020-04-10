@@ -10,7 +10,7 @@ keywords:
 - 安全
 - 阿里巴巴Java开发手册
 thumbnailImagePosition: left
-thumbnailImage: //example.com/image.jpg
+thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200410153752.png
 showSocial: false
 draft: false
 ---
