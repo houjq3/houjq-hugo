@@ -11,7 +11,7 @@ keywords:
 - 男人
 thumbnailImagePosition: left
 thumbnailImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200411002542.png
-coverImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200411002719.png
+coverImage: https://houjq.oss-cn-hongkong.aliyuncs.com/hugo/img/20200411004209.png
 showSocial: false
 draft: false
 ---
