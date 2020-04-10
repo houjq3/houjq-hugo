@@ -1,5 +1,5 @@
 ---
-title: "七个人生工具：SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则"
+title: "SWOT、PDCA、6W2H、SMART、WBS、时间管理、二八原则"
 slug: "Life-Tools"
 date: 2019-07-17T09:18:12+08:00
 categories:
